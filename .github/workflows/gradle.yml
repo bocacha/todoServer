@@ -35,7 +35,8 @@ jobs:
       with:
         arguments: build
   test:
+    name: Run tests
     runs-on: ubuntu-latest
     needs: build
-    name: Run tests
-    run: ./gradlew test
+    steps:
+       - run: ./gradlew test
