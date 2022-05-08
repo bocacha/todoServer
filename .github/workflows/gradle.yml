@@ -39,4 +39,4 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-       - run: ./gradlew test
+       - run: gradle test
