@@ -21,5 +21,10 @@
       <option name="name" value="artifactory-maven-resolver" />
       <option name="url" value="https://jalartifactory.jfrog.io/artifactory/todogradle-gradle-dev" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="artifactory-maven-resolver" />
+      <option name="name" value="artifactory-maven-resolver" />
+      <option name="url" value="https://jalartifactory.jfrog.io/artifactory/todo" />
+    </remote-repository>
   </component>
 </project>
