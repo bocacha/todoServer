@@ -80,7 +80,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: |
-         - gradle build sonarqube --info
-         - allow_failure: false
+        run: gradle build sonarqube --info
         #go go go
