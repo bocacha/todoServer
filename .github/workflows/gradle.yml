@@ -83,5 +83,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         #run: gradle build sonarqube --info verify sonar:sonar -Dsonar.qualitygate.wait=true
-        run: gradle build sonarqube --info
+        run: gradle build sonarqube --info -Dsonar.qualitygate.wait=true
         #go go go
