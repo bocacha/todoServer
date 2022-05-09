@@ -39,6 +39,18 @@ jobs:
 
     - name: Build JFrog
       run: ./gradlew build
+  leaks:
+    name: Detect secrets leaks
+    on: push
+    jobs:
+      gitleaks:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@v1
+          with:
+            fetch-depth: '0'
+        - name: gitleaks-action
+            uses: zricethezav/gitleaks-action@master
 
   test:
     name: Run tests
