@@ -65,11 +65,13 @@ The Quality Gate then was updated modifying the rules avoiding the 5 code smell 
 
 8) Adding Snyk security:
 
-
-
 ![snyk](https://user-images.githubusercontent.com/82456534/167525304-be52edbe-6580-4837-aef4-255991928b01.png)
 
 ![snyk2](https://user-images.githubusercontent.com/82456534/167525317-638922ac-06b9-442b-8015-98fa887486ba.png)
+
+
+
+![actions](https://user-images.githubusercontent.com/82456534/167526833-c682a1a9-68be-4e18-9329-9c1ae083a097.png)
 
 
 
