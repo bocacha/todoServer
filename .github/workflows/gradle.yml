@@ -52,22 +52,17 @@ jobs:
           uses: zricethezav/gitleaks-action@master
 
 
-  Snyk:
-      runs-on: ubuntu-latest
-<<<<<<< HEAD
-=======
-      
->>>>>>> d5b4add1e7a464b085b8de722ab617d57ef93b69
-      needs: build
-      steps:
-        - run: chmod +x ./gradlew
-        - uses: actions/checkout@master
-        - name: Check for vulnerabilities with Snyk
-          uses: snyk/actions/gradle@master
-          env:
-            SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-          with:
-            args: --severity-threshold=high
+  snyk:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Run Snyk to check for vulnerabilities
+        uses: snyk/actions/maven@master
+        continue-on-error: true # To make sure that SARIF upload gets called
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          args: --sarif-file-output=snyk.sarif
 
   test:
     name: Run tests
