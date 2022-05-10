@@ -27,6 +27,12 @@
    
  ![set me up](https://user-images.githubusercontent.com/82456534/167514710-ec38c832-29dd-48b3-8452-a85ec7dddca5.png)
  
+
+
+
+![gradloeprop](https://user-images.githubusercontent.com/82456534/167518366-33523f4f-f8e6-4e6f-8ea5-ad7c4339b76a.png)
+
+ 
  5) Once the gradle.yaml and and gradle.properties has been updated, the Artifactories will be uploaded on the next GitHub push:
 
 ![JFrog upload](https://user-images.githubusercontent.com/82456534/167515294-ee878e74-48aa-4419-8396-2c86459a0658.png)
