@@ -21,19 +21,21 @@
    *  Remote
    *  Virtual ( this one contains the other two )
    
-   Following the JFrog assist helper "Set me Up" a snippet is generated containing the code lines to be added inside gradle.yaml, besides
+   Following the JFrog assist helper "Set me Up" a snippet is generated containing the code lines to be added inside build.gradle, besides
    the gradle.properties file that must me copied into the project root containing the JFrog credentials:
    
    
  ![set me up](https://user-images.githubusercontent.com/82456534/167514710-ec38c832-29dd-48b3-8452-a85ec7dddca5.png)
  
+The Artifactory code portion in build.gradle:
 
+![artifactory](https://user-images.githubusercontent.com/82456534/167519082-4ef779f1-55a0-4841-a2f3-0d71ec0def09.png)
 
-
+The gradle.properties file:
 ![gradloeprop](https://user-images.githubusercontent.com/82456534/167518366-33523f4f-f8e6-4e6f-8ea5-ad7c4339b76a.png)
 
  
- 5) Once the gradle.yaml and and gradle.properties has been updated, the Artifactories will be uploaded on the next GitHub push:
+ 5) Once the build.gradle and and gradle.properties has been updated, the Artifactories will be uploaded on the next GitHub push:
 
 ![JFrog upload](https://user-images.githubusercontent.com/82456534/167515294-ee878e74-48aa-4419-8396-2c86459a0658.png)
 
