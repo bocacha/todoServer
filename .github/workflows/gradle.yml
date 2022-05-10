@@ -54,6 +54,7 @@ jobs:
 
   Snyk:
       runs-on: ubuntu-latest
+      run: chmod +x ./gradlew
       needs: build
       steps:
         - uses: actions/checkout@master
