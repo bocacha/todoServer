@@ -54,6 +54,10 @@ jobs:
 
   Snyk:
       runs-on: ubuntu-latest
+<<<<<<< HEAD
+=======
+      
+>>>>>>> d5b4add1e7a464b085b8de722ab617d57ef93b69
       needs: build
       steps:
         - run: chmod +x ./gradlew
