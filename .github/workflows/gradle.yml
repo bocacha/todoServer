@@ -54,9 +54,10 @@ jobs:
 
   Snyk:
       runs-on: ubuntu-latest
-      run: chmod +x ./gradlew
+      
       needs: build
       steps:
+        - run: chmod +x ./gradlew
         - uses: actions/checkout@master
         - name: Check for vulnerabilities with Snyk
           uses: snyk/actions/gradle@master
