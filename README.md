@@ -10,7 +10,7 @@
    steps, choosing Java with Gradle as template.
 
 3) Next step was to start editing the gradle.yaml file, setting the Workflow with their corresponding jobs & steps, allowing to seeing the 
-   first action running:
+
 
 ![GItHub action1](https://user-images.githubusercontent.com/82456534/167513190-cc57a21d-e0fb-4605-92a2-0e60d03c1a53.png)
 
